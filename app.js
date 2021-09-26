@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
 
 require('dotenv').config();
 
@@ -17,8 +16,8 @@ app.use('/js' , express.static(__dirname + 'public/js'))
 //templating engine
 app.set('views' , './src/views')
 app.set('view engine' , 'ejs')
-
-app.use(bodyParser.urlencoded({extended : true}));
+app.use(express.urlencoded({extended : true}));
+app.use(express.json());
 
 //setting routes
 //home route
