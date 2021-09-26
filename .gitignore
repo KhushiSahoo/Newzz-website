@@ -1,3 +1,5 @@
 .env
 node_modules/
 newzzz-2021
+test/*.log
+npm-debug.log
