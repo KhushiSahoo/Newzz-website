@@ -10,7 +10,7 @@
     </section>
     <%  if(data != null){%>  
         <% data.forEach(function(article , index) { %>
-        <section class="p-5 bg-dark text-light">
+        <section class=" p-0 p-xs-0 p-sm-1 p-3 bg-dark text-light">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md">
@@ -21,12 +21,12 @@
                                               <% } %>
                        <!--- <img class="img-fluid " src="< article.urlToImage  " alt="">--->
                     </div>
-                    <div class="col-md p-5">
+                    <div class="col-md p-0 p-xs-0 p-sm-1 p-3">
                         <h3><%- article.title %></h3>
-                        <p class="lead"><%- article.description %></p>
-                        <p><%- article.content %></p>
+                        <p class="lead leadd"><%- article.description %></p>
+                        <p class="content"> <%- article.content %></p>
                     
-                    <i class="bi bi-chevron-right"><a href="<%=article.url%>" class="btn btn-light mt-3">Read more</a></i>
+                    <i class="bi bi-chevron-right"><a href="<%=article.url%>" class="btn btn-light mt-xs-1 mt-sm-2 mt-3">Read more</a></i>
     
                     </div>
     
